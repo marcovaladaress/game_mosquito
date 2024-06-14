@@ -18,6 +18,14 @@ ajustaTamanhoPalcoJogo()
 
 function posicaoRandomica(){
 
+// criação da posição randomica 
+    if ( document.getElementById('mosquito')) {
+        document.getElementById('mosquito').remove()
+
+    }
+    // criação da posição randomica 
+    
+
     let posicaox = Math.floor(Math.random() * largura) - 90
     let posicaoy = Math.floor(Math.random() * altura) - 90 
 
@@ -34,13 +42,56 @@ function posicaoRandomica(){
     
      let mosquito = document.createElement('img')
      mosquito.src = 'imagens/mosca.png'
-     mosquito.className = 'mosca1'
+     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
      mosquito.style.left = posicaox + 'px'
-     mosquito.style.top = posicaoy+ 'px'
+     mosquito.style.top = posicaoy + 'px'
      mosquito.style.position = 'absolute'
+     mosquito.id = 'mosquito'
     
     document.body.appendChild(mosquito)
 
+    console.log(tamanhoAleatorio()) 
+    console.log(ladoAleatorio())
+
+
+}
+
+
+// tamanho do elemento 
+function tamanhoAleatorio(){
+
+    let classe = Math.floor(Math.random() * 3)
+
+    switch (classe) {
+        case 0 :
+            return 'mosca1'
+        
+        case 1 : 
+        
+             return 'mosca2'
+
+        case 2 : 
+
+             return 'mosca3'
+    }
+    
+}
+
+
+function ladoAleatorio () {
+
+    let classe = Math.floor(Math.random() * 2)
+
+    switch (classe) {
+        case 0 :
+            return 'ladoA'
+        
+        case 1 : 
+        
+             return 'ladoB'
+
+        
+    }
 
 
 }
