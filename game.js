@@ -23,7 +23,7 @@ function posicaoRandomica(){
         document.getElementById('mosquito').remove()
 
     }
-    // criação da posição randomica 
+
     
 
     let posicaox = Math.floor(Math.random() * largura) - 90
@@ -77,6 +77,7 @@ function tamanhoAleatorio(){
     
 }
 
+// transição de lado 
 
 function ladoAleatorio () {
 
