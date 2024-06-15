@@ -60,3 +60,10 @@ body{
      font-size: 20px;
      font-weight:bold ;
 }
+
+.botaoHome {
+    color: white;
+    text-decoration: none;
+}
+
+

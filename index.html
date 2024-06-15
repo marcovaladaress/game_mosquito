@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             <img id="v3" src="imagens/coracao_cheio.png" alt="">
         </div>
 
-        <div class="cronometro"> Tempo Restante ?
+        <div class="cronometro"> Tempo Restante:  <span id="cronometro"></span>
 
         </div>
 
@@ -26,12 +26,16 @@
 
 
 <script>
+
+    document.getElementById('cronometro').innerHTML = tempo
    
-    setInterval(function() {
+     let criaMosca = setInterval(function() {
         posicaoRandomica() 
     }, 2000)
 
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     
 </body>
