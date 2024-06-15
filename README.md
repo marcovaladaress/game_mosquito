@@ -32,7 +32,7 @@ Este projeto é parte dos meus estudos em desenvolvimento web. Sinta-se à vonta
 
 ## Contato
 
-- **Email**: seuemail@exemplo.com
-- **GitHub**: [seuusuario](https://github.com/seuusuario)
+- **Email**: contato@marcovsfernandes.com
+- **GitHub**: [marcovaladaress](https://github.com/marcovaladaress)
 
 Aproveite o jogo e divirta-se!
