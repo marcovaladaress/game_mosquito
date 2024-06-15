@@ -1,17 +1,32 @@
 
 
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 html{
 
     cursor: url(imagens/mata_mosca.png) 30 30, auto;
 }
 
 
-.imagem_fundo{
+body{
     background-image: url(imagens/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
 }
+
+.container{
+
+    width: 100%;
+    height: 100%;    
+}
+
 
 
 
@@ -74,16 +89,40 @@ html{
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 450px) { 
 
-    .inicio_game{
-        width:300px;
-        height: 300px;
+    .inicio_game img {
+        width:350px;
+        height: 350px;
+    }
+
+    .game_over {
+
+        width:350px;
+        height: 350px;
+    }
+
+    .vitoria{
+        width:350px;
+        height: 350px;
+
     }
     
-    .imagem_fundo{
-    height: 100vh;
-       
+    .background {
+
+        height:100vh;
+   
+
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
     
+   
 
 
 
@@ -91,35 +130,97 @@ html{
 
 /* Small devices (landscape phones, 576px and up) */ 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .inicio_game{
-        width:400px;
-        height: 400px;
-    }
-    
-    .imagem_fundo{
-    height: 100vh;
-       
+    .inicio_game img {
+        width:350px;
+        height: 350px;
     }
 
+    .game_over {
+
+        width:350px;
+        height: 350px;
+    }
+
+    .vitoria{
+        width:350px;
+        height: 350px;
+
+    }
+    
+    .background{
+        height: 100vh;
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    
+   
+    
+   
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .inicio_game{
+    .inicio_game img{
         width:400px;
         height: 400px;
         display: flex;
         
     }
-    
-    .imagem_fundo{
-    height: 100vh;
-       
+
+    .background {
+
+        height: 100vh;
     }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+   
 }
+    
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    .inicio_game img{
+        width:600px;
+        height: 600px;
+        display: flex;
+        
+    }
+
+    .background {
+
+        height: 100vh;
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+   
+
+ }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }

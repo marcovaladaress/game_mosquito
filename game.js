@@ -21,6 +21,8 @@ criaMoscaTempo = 1300
 } else if(nível === 'chucknorris'){
     criaMoscaTempo = 220
 }
+
+
     
    
 
