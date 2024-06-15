@@ -4,6 +4,26 @@ let largura = 0
 let vidas = 1
 let tempo = 15
 
+let criaMoscaTempo = 1300
+
+
+
+let nível = window.location.search
+nível = nível.replace('?', '')
+
+if(nível === 'normal') {
+
+criaMoscaTempo = 1300
+
+}else if (nível === 'dificil'){
+    criaMoscaTempo = 900
+   
+} else if(nível === 'chucknorris'){
+    criaMoscaTempo = 220
+}
+    
+   
+
 function ajustaTamanhoPalcoJogo(){
 
         altura = window.innerHeight
@@ -22,7 +42,7 @@ let cronometro = setInterval(function(){
         
         clearInterval(cronometro)
         clearInterval(criaMosca)
-        alert('vitoria')
+         window.location.href = 'vitoria.html'
       
     }else {
         document.getElementById('cronometro').innerHTML = tempo
