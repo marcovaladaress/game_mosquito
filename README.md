@@ -1,10 +1,10 @@
-# Mata Mosquito
+# O Mata Mosquito
 
 
 
 ## Descrição
 
-"Mata Mosquito" é um jogo simples e divertido, replicado a partir do curso de Desenvolvimento Web. O objetivo do jogo é clicar nos mosquitos que aparecem na tela antes que eles desapareçam. É um ótimo exercício para praticar habilidades de JavaScript, HTML e CSS, além de utilizar o Bootstrap para estilização.
+O "Mata Mosquito" é um jogo simples e divertido, replicado a partir do curso de Desenvolvimento Web. O objetivo do jogo é clicar nos mosquitos que aparecem na tela antes que eles desapareçam. É um ótimo exercício para praticar habilidades de JavaScript, HTML e CSS, além de utilizar o Bootstrap para estilização.
 
 ## Tecnologias Utilizadas
 
